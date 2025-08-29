@@ -1,0 +1,2956 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>DF_DatosPorAgencia</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+      <parameter>
+        <name>NIVELACCESO</name>
+        <default_value>2</default_value>
+        <description />
+      </parameter>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>N</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>N</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>N</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>N</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>N</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>N</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>N</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>N</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>N</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>N</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>N</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>N</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>N</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>N</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>N</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>N</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>N</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>N</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>N</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>N</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>N</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>N</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>N</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>N</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>N</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>N</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>N</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>N</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>N</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>N</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>N</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>N</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>N</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>N</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>N</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>N</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>N</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>N</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>N</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>N</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>N</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>N</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>N</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>N</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>N</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>N</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>N</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>N</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>N</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>N</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>N</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>N</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>N</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>N</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>N</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+      <slaveserver>
+        <name>slave1</name>
+        <hostname>10.12.1.209</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>slave2</name>
+        <hostname>10.12.1.201</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+      <slaveserver>
+        <name>slave3</name>
+        <hostname>10.12.3.243</hostname>
+        <port>8081</port>
+        <webAppName />
+        <username>cluster</username>
+        <password>Encrypted 2be98afc86aa7f2e4cb1aa265cd86aac8</password>
+        <proxy_hostname />
+        <proxy_port />
+        <non_proxy_hosts />
+        <master>N</master>
+        <sslMode>N</sslMode>
+      </slaveserver>
+    </slaveservers>
+    <clusterschemas>
+      <clusterschema>
+        <name>CLUSTER_DQ</name>
+        <base_port>40001</base_port>
+        <sockets_buffer_size>2000</sockets_buffer_size>
+        <sockets_flush_interval>5000</sockets_flush_interval>
+        <sockets_compressed>Y</sockets_compressed>
+        <dynamic>N</dynamic>
+        <slaveservers>
+          <name>slave1</name>
+          <name>slave2</name>
+        </slaveservers>
+      </clusterschema>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/03/02 08:17:35.445</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/03/02 08:17:35.445</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>DWH_RS_RW</name>
+    <server>sicop-ba.ci43gmrbpmdv.us-west-1.redshift.amazonaws.com</server>
+    <type>REDSHIFT</type>
+    <access>Native</access>
+    <database>dwh</database>
+    <port>5439</port>
+    <username>pentaho_user</username>
+    <password>Encrypted 70656ccaf9c7a73996b1d49b3b8f338cc2fe82</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_REDSHIFT.tcpKeepAlive</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5439</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>KRATOSSERVER</name>
+    <server>192.168.0.55</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>STAGEBA</database>
+    <port>3306</port>
+    <username>user_ba</username>
+    <password>Encrypted 2be98afc83996b1d49b3b8f338cc2fe8c</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
+        <attribute>500</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useSSL</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>AnalisisDiario</from>
+      <to>String operations 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>AnalisisDiario 2</from>
+      <to>String operations 2 4</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculator</from>
+      <to>PorcenSeg</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Calculator 2</from>
+      <to>PorcenSeg</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Calculator</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows</from>
+      <to>Calculator 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Filter rows 2</from>
+      <to>If field value is null</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>FullScore</from>
+      <to>String operations</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Group by</from>
+      <to>Filter rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>If field value is null</from>
+      <to>Modified Java Script Value</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Inactivos</from>
+      <to>String operations 2 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified Java Script Value</from>
+      <to>Sort rows 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Modified Java Script Value 2</from>
+      <to>Filter rows 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Multiway Merge Join</from>
+      <to>Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>PorcenSeg</from>
+      <to>Sort rows</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>SegDemosTotalesVendedoresROP</from>
+      <to>String operations 2 4</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows</from>
+      <to>Select values</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Sort rows 2</from>
+      <to>Group by</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Stream lookup</from>
+      <to>Stream lookup 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Stream lookup 2</from>
+      <to>Stream lookup 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Stream lookup 3</from>
+      <to>Modified Java Script Value 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations</from>
+      <to>Multiway Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations 2</from>
+      <to>Multiway Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations 2 2</from>
+      <to>Stream lookup</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations 2 3</from>
+      <to>Multiway Merge Join</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>String operations 2 4</from>
+      <to>Stream lookup 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>UsoApp 2</from>
+      <to>String operations 2 2</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>UsoApp 2 2</from>
+      <to>Stream lookup 3</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Select values</from>
+      <to>Table output 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>AnalisisDiario</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+'${FECHAINICIO}' as idfecha
+,max(f.ano) as ano
+,max(f.mes) as mes
+,max(d.marca) as marca
+,max(d.nombre) as distribuidor
+,max(e.iddistribuidorpip) as iddistribuidorpip
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombre
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as ROP
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as DOS
+,sum(prospectos) as prospectos
+,sum(prospectosPiso) as prospectospiso
+,case
+		WHEN  sum(prospectosPiso)>sum(prospectos) THEN 100
+		WHEN  sum(prospectospiso)=0				   THEN 0
+		ELSE  round(((cast(sum(prospectosPiso) AS DECIMAL(8,2)) /sum(prospectos))*100),0)
+END porcPiso	
+,sum(prospectos)-(sum(prospectospiso)+sum(leads)) as prospectoscalle
+,case
+		WHEN  (sum(prospectos)-(sum(prospectospiso)+sum(leads)))>sum(prospectos) THEN 100
+		WHEN  (sum(prospectos)-(sum(prospectospiso)+sum(leads)))=0				   THEN 0
+		ELSE  round(((cast((sum(prospectos)-(sum(prospectospiso)+sum(leads))) AS DECIMAL(8,2)) /sum(prospectos))*100),0)
+END porccalle
+,sum(leads) as leads
+,case
+		WHEN  sum(leads)>sum(prospectos) THEN 100
+		WHEN  sum(leads)=0				   THEN 0
+		ELSE  round(((cast(sum(leads) AS DECIMAL(8,2)) /sum(prospectos))*100),0)
+END porcLeads
+,sum(prospectoscondemo) as prospectoscondemo	
+,sum(ventasentregadas) as ventas
+from ${BASEDWH}.analisisdiario a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_ejecutivos e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where f.fecha between to_date('${FECHAINICIO}','YYYY/MM/01') and '${FECHAINICIO}'
+and 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END 
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+order by id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>AnalisisDiario 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END as id
+,sum(a.demostraciones) as demos
+,sum(a.seguimientoscumplidos) as seguimientos	
+from ${BASEDWH}.analisisdiario a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_ejecutivos e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+inner join(
+select
+e.referencia  as id
+from dwhmultimarca.analisisconsumoapps a
+inner join dwhmultimarca.dim_fechas f on a.dimfecha=f.idfecha
+inner join dwhmultimarca.dim_ejecutivos_app e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+and e.perfil='Vendedor' and e.rop='Si'  and e.activo='Si'
+group by e.referencia
+order by id) ejecutivos on e.referencia=ejecutivos.id
+where f.fecha between to_date('${FECHAINICIO}','YYYY/MM/01') and '${FECHAINICIO}'
+and case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END 
+group by case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>464</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculator</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>SeguimientosCumplidosWeb</field_name>
+      <calc_type>SUBTRACT</calc_type>
+      <field_a>seguimientos</field_a>
+      <field_b>seguimientosapp</field_b>
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Calculator 2</name>
+    <type>Calculator</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <calculation>
+      <field_name>SeguimientosCumplidosWeb</field_name>
+      <calc_type>CONSTANT</calc_type>
+      <field_a>0</field_a>
+      <field_b />
+      <field_c />
+      <value_type>Integer</value_type>
+      <value_length>-1</value_length>
+      <value_precision>-1</value_precision>
+      <remove>N</remove>
+      <conversion_mask />
+      <decimal_symbol />
+      <grouping_symbol />
+      <currency_symbol />
+    </calculation>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1168</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to>Calculator</send_true_to>
+    <send_false_to>Calculator 2</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>seguimientosapp</leftvalue>
+        <function>&lt;=</function>
+        <rightvalue>seguimientos</rightvalue>
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1104</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Filter rows 2</name>
+    <type>FilterRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <send_true_to />
+    <send_false_to>If field value is null</send_false_to>
+    <compare>
+      <condition>
+        <negated>N</negated>
+        <leftvalue>perfil</leftvalue>
+        <function>IS NULL</function>
+        <rightvalue />
+      </condition>
+    </compare>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>736</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>FullScore</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+ NivelEjecutivo.id
+,NivelEjecutivo.nombre
+,NivelEjecutivo.ROP
+,NivelEjecutivo.DOS
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  NivelDistribuidor.score
+		WHEN '${NIVELACCESO}'='5'      THEN  NivelDistribuidor.score
+		WHEN '${NIVELACCESO}'='4'      THEN  NivelDistribuidor.score
+		WHEN '${NIVELACCESO}'='3'	   THEN  NivelDistribuidor.score
+		WHEN '${NIVELACCESO}'='2'  	   THEN  NivelEjecutivo.score
+END as score
+from
+(select 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombre
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as ROP
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as DOS
+,round(avg(a.score),2) as score
+from ${BASEDWH}.analisisproductividaddiarioejecutivo	 a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_ejecutivos e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip = d.idclientepip
+where f.fecha = '${FECHAINICIO}'
+and
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+order by id) NivelEjecutivo
+
+
+
+left join(
+select 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  d.nombre
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  d.nombre
+END as nombre
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as ROP
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as DOS
+,round(avg(a.score),2) as score
+from ${BASEDWH}.analisisproductividaddiariocliente	 a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_distribuidores d on a.dimdistribuidor=d.iddistribuidor
+where f.fecha = '${FECHAINICIO}'
+and
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  d.nombre
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  d.nombre
+END
+order by id) NivelDistribuidor on NivelEjecutivo.id=NivelDistribuidor.id
+order by id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Group by</name>
+    <type>GroupBy</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <all_rows>N</all_rows>
+    <ignore_aggregate>N</ignore_aggregate>
+    <field_ignore />
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>grp</prefix>
+    <add_linenr>N</add_linenr>
+    <linenr_fieldname />
+    <give_back_row>N</give_back_row>
+    <group>
+      <field>
+        <name>nombre</name>
+      </field>
+      <field>
+        <name>perfil</name>
+      </field>
+      <field>
+        <name>id</name>
+      </field>
+      <field>
+        <name>idfecha</name>
+      </field>
+      <field>
+        <name>ano</name>
+      </field>
+      <field>
+        <name>mes</name>
+      </field>
+      <field>
+        <name>marca</name>
+      </field>
+      <field>
+        <name>distribuidor</name>
+      </field>
+    </group>
+    <fields>
+      <field>
+        <aggregate>ejecutivorop</aggregate>
+        <subject>ejecutivorop</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>ejecutivodos</aggregate>
+        <subject>ejecutivodos</subject>
+        <type>FIRST_INCL_NULL</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>score</aggregate>
+        <subject>score</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>prospectospiso</aggregate>
+        <subject>prospectospiso</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>prospectoscalle</aggregate>
+        <subject>prospectoscalle</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>leads</aggregate>
+        <subject>leads</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>prospectos</aggregate>
+        <subject>prospectos</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>porcpiso</aggregate>
+        <subject>porcpiso</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>porccalle</aggregate>
+        <subject>porccalle</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>porcleads</aggregate>
+        <subject>porcleads</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>inactivos</aggregate>
+        <subject>inactivos</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>demos</aggregate>
+        <subject>demos</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>prospectoscondemo</aggregate>
+        <subject>prospectoscondemo</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>demostracionesapp</aggregate>
+        <subject>demostracionesapp</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>PorcDemos</aggregate>
+        <subject>PorcDemos</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>PorcDemosAPP</aggregate>
+        <subject>PorcDemosAPP</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>seguimientos</aggregate>
+        <subject>seguimientos</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>seguimientosapp</aggregate>
+        <subject>seguimientosapp</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>PorcSeguimientosAPP</aggregate>
+        <subject>PorcSeguimientosAPP</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>ventas</aggregate>
+        <subject>ventas</subject>
+        <type>SUM</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>PorcConversion</aggregate>
+        <subject>PorcConversion</subject>
+        <type>AVERAGE</type>
+        <valuefield />
+      </field>
+      <field>
+        <aggregate>iddistribuidorpip</aggregate>
+        <subject>iddistribuidorpip</subject>
+        <type>LAST_INCL_NULL</type>
+        <valuefield />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1040</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>If field value is null</name>
+    <type>IfNull</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <replaceAllByValue>0</replaceAllByValue>
+    <replaceAllMask />
+    <selectFields>N</selectFields>
+    <selectValuesType>N</selectValuesType>
+    <setEmptyStringAll>N</setEmptyStringAll>
+    <valuetypes>
+      </valuetypes>
+    <fields>
+      </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>816</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Inactivos</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+Ejecutivo.id
+,Ejecutivo.nombre
+,Datos.inactivos
+from (select
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombre
+from ${BASEDWH}.dim_ejecutivos e 
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+order by id) Ejecutivo
+left join
+(select
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombre
+,sum(prospectosinactivos) as inactivos
+from ${BASEDWH}.analisisdiario a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_ejecutivos e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where f.fecha = '${FECHAINICIO}'
+and 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+order by id) Datos on Ejecutivo.id=Datos.id
+order by Ejecutivo.id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified Java Script Value</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+var PorcDemos;
+var PorcDemosAPP;
+var PorcSeguimientosAPP;
+var PorcConversion;
+
+if(prospectos==0){
+	PorcDemos=0;
+}else{
+	if(demos>=prospectos){
+		PorDemos=100;
+	}else{
+	PorcDemos=Math.round((demos/prospectos)*100);
+	}
+ }
+
+
+if(demos==0){
+	PorcDemosAPP=0;
+}else{
+	if(demostracionesapp>=demos){
+		PorcDemosAPP=100;
+	}else{
+	PorcDemosAPP=Math.round((demostracionesapp/demos)*100);
+	}
+ }
+
+if(seguimientos==0){
+	PorcSeguimientosAPP=0;
+}else{
+	if(seguimientosapp>=seguimientos){
+		PorcSeguimientosAPP=100;
+	}else{
+	PorcSeguimientosAPP=Math.round((seguimientosapp/seguimientos)*100);
+	}
+ }
+
+if(prospectos==0){
+	PorcConversion=0;
+}else{
+	if(ventas>=prospectos){
+		PorcConversion=100;
+	}else{
+	PorcConversion=Math.round((ventas/prospectos)*100);
+	}
+ }
+
+
+</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>PorcDemos</name>
+        <rename>PorcDemos</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>PorcDemosAPP</name>
+        <rename>PorcDemosAPP</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>PorcSeguimientosAPP</name>
+        <rename>PorcSeguimientosAPP</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>PorcConversion</name>
+        <rename>PorcConversion</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>880</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Modified Java Script Value 2</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+var Perfil;
+var ejecutivorop;
+var ejecutivodos;
+
+if(PerfilActivosapp==null){
+	Perfil=PerfilOtros;
+}else{
+	Perfil=PerfilActivosapp;
+}
+
+
+if(EjecutivoRopApp==null){
+	ejecutivorop=EjecutivoROPOtros;
+}else{
+	ejecutivorop=EjecutivoRopApp;
+}
+
+
+if(EjecutivoDosApp==null){
+	ejecutivodos=EjecutivoDosOtros;
+}else{
+	ejecutivodos=EjecutivoDosApp;
+}</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>Perfil</name>
+        <rename>Perfil</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>ejecutivorop</name>
+        <rename>ejecutivorop</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+      <field>
+        <name>ejecutivodos</name>
+        <rename>ejecutivodos</rename>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>656</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Multiway Merge Join</name>
+    <type>MultiwayMergeJoin</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <join_type>INNER</join_type>
+    <step0>String operations</step0>
+    <step1>String operations 2</step1>
+    <step2>String operations 2 3</step2>
+    <number_input>3</number_input>
+    <keys>
+      <key>id</key>
+      <key>id</key>
+      <key>id</key>
+    </keys>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>304</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>PorcenSeg</name>
+    <type>ScriptValueMod</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <compatible>N</compatible>
+    <optimizationLevel>9</optimizationLevel>
+    <jsScripts>
+      <jsScript>
+        <jsScript_type>0</jsScript_type>
+        <jsScript_name>Script 1</jsScript_name>
+        <jsScript_script>//Script here
+var PorcSeguimientosWeb;
+
+
+
+if(seguimientos==0){
+	PorcSeguimientosWeb=0;
+}else{
+	if(SeguimientosCumplidosWeb>=seguimientos){
+		PorcSeguimientosWeb=100;
+	}else{
+	PorcSeguimientosWeb=Math.round((SeguimientosCumplidosWeb/seguimientos)*100);
+	}
+ }
+
+</jsScript_script>
+      </jsScript>
+    </jsScripts>
+    <fields>
+      <field>
+        <name>PorcSeguimientosWeb</name>
+        <rename>PorcSeguimientosWeb</rename>
+        <type>Number</type>
+        <length>16</length>
+        <precision>2</precision>
+        <replace>N</replace>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1248</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>SegDemosTotalesVendedoresROP</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END as id
+,ea.perfil
+,ea.activo
+,ea.rop
+,sum(demostraciones) as demos	
+,sum(seguimientoscumplidos) as seguimientos
+from ${BASEDWH}.analisisdiario a
+inner join ${BASEDWH}.dim_fechas f on a.dimfecha=f.idfecha
+inner join ${BASEDWH}.dim_ejecutivos e on a.dimejecutivo=e.idejecutivo
+inner join dwhmultimarca.dim_ejecutivos_app ea on ea.referencia=e.referencia
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where f.fecha between to_date('${FECHAINICIO}','YYYY/MM/01') and '${FECHAINICIO}'
+and 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  ea.referencia=e.referencia
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END and ea.rop='Si' and ea.perfil='Vendedor' 
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END,ea.perfil,ea.activo,ea.rop
+order by id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Select values</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>marca</name>
+        <rename />
+      </field>
+      <field>
+        <name>distribuidor</name>
+        <rename />
+      </field>
+      <field>
+        <name>nombre</name>
+        <rename>Ejecutivo</rename>
+      </field>
+      <field>
+        <name>perfil</name>
+        <rename />
+      </field>
+      <field>
+        <name>ejecutivorop</name>
+        <rename>ROP</rename>
+      </field>
+      <field>
+        <name>ejecutivodos</name>
+        <rename>doscero</rename>
+      </field>
+      <field>
+        <name>score</name>
+        <rename />
+      </field>
+      <field>
+        <name>prospectospiso</name>
+        <rename />
+      </field>
+      <field>
+        <name>prospectoscalle</name>
+        <rename />
+      </field>
+      <field>
+        <name>leads</name>
+        <rename />
+      </field>
+      <field>
+        <name>inactivos</name>
+        <rename />
+      </field>
+      <field>
+        <name>demos</name>
+        <rename>demostraciones</rename>
+      </field>
+      <field>
+        <name>prospectoscondemo</name>
+        <rename />
+      </field>
+      <field>
+        <name>demostracionesapp</name>
+        <rename />
+      </field>
+      <field>
+        <name>seguimientos</name>
+        <rename>SeguimientosCumplidos</rename>
+      </field>
+      <field>
+        <name>seguimientosapp</name>
+        <rename />
+      </field>
+      <field>
+        <name>ventas</name>
+        <rename>VentasEntregadas</rename>
+      </field>
+      <field>
+        <name>iddistribuidorpip</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>score</name>
+        <rename>score</rename>
+        <type>BigNumber</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>#.#</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale />
+        <date_format_timezone />
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding />
+        <decimal_symbol />
+        <grouping_symbol />
+        <currency_symbol />
+        <storage_type />
+      </meta>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1424</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>perfil</name>
+        <ascending>N</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>ejecutivorop</name>
+        <ascending>N</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>score</name>
+        <ascending>N</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1328</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Sort rows 2</name>
+    <type>SortRows</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <directory>%%java.io.tmpdir%%</directory>
+    <prefix>out</prefix>
+    <sort_size>1000000</sort_size>
+    <free_memory />
+    <compress>N</compress>
+    <compress_variable />
+    <unique_rows>N</unique_rows>
+    <fields>
+      <field>
+        <name>nombre</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>perfil</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+      <field>
+        <name>id</name>
+        <ascending>Y</ascending>
+        <case_sensitive>N</case_sensitive>
+        <collator_enabled>N</collator_enabled>
+        <collator_strength>0</collator_strength>
+        <presorted>N</presorted>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>976</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Stream lookup</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>String operations 2 2</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>id</name>
+        <field>id</field>
+      </key>
+      <value>
+        <name>demostracionesapp</name>
+        <rename>demostracionesapp</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>seguimientosapp</name>
+        <rename>seguimientosapp</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>ejecutivodos</name>
+        <rename>EjecutivoDosApp</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>ejecutivorop</name>
+        <rename>EjecutivoRopApp</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>perfil</name>
+        <rename>PerfilActivosapp</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>368</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Stream lookup 2</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>String operations 2 4</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>id</name>
+        <field>id</field>
+      </key>
+      <value>
+        <name>demos</name>
+        <rename>demos</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+      <value>
+        <name>seguimientos</name>
+        <rename>seguimientos</rename>
+        <default />
+        <type>Integer</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>448</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Stream lookup 3</name>
+    <type>StreamLookup</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <from>UsoApp 2 2</from>
+    <input_sorted>N</input_sorted>
+    <preserve_memory>Y</preserve_memory>
+    <sorted_list>N</sorted_list>
+    <integer_pair>N</integer_pair>
+    <lookup>
+      <key>
+        <name>id</name>
+        <field>id</field>
+      </key>
+      <value>
+        <name>perfil</name>
+        <rename>PerfilOtros</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>rop</name>
+        <rename>EjecutivoROPOtros</rename>
+        <default />
+        <type>String</type>
+      </value>
+      <value>
+        <name>dos</name>
+        <rename>EjecutivoDosOtros</rename>
+        <default />
+        <type>String</type>
+      </value>
+    </lookup>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations 2</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations 2 2</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations 2 3</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>String operations 2 4</name>
+    <type>StringOperations</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <in_stream_name>id</in_stream_name>
+        <out_stream_name />
+        <trim_type>both</trim_type>
+        <lower_upper>none</lower_upper>
+        <padding_type>none</padding_type>
+        <pad_char />
+        <pad_len />
+        <init_cap>no</init_cap>
+        <mask_xml>none</mask_xml>
+        <digits>none</digits>
+        <remove_special_characters>none</remove_special_characters>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table output 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>KRATOSSERVER</connection>
+    <schema>stageba</schema>
+    <table>reportescorecardejecutivos</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>Marca</column_name>
+        <stream_name>marca</stream_name>
+      </field>
+      <field>
+        <column_name>Distribuidor</column_name>
+        <stream_name>distribuidor</stream_name>
+      </field>
+      <field>
+        <column_name>Ejecutivo</column_name>
+        <stream_name>Ejecutivo</stream_name>
+      </field>
+      <field>
+        <column_name>Perfil</column_name>
+        <stream_name>Perfil</stream_name>
+      </field>
+      <field>
+        <column_name>ROP</column_name>
+        <stream_name>ROP</stream_name>
+      </field>
+      <field>
+        <column_name>DosCero</column_name>
+        <stream_name>doscero</stream_name>
+      </field>
+      <field>
+        <column_name>Score</column_name>
+        <stream_name>score</stream_name>
+      </field>
+      <field>
+        <column_name>ProspectosPiso</column_name>
+        <stream_name>prospectospiso</stream_name>
+      </field>
+      <field>
+        <column_name>ProspectosCalle</column_name>
+        <stream_name>prospectoscalle</stream_name>
+      </field>
+      <field>
+        <column_name>Leads</column_name>
+        <stream_name>leads</stream_name>
+      </field>
+      <field>
+        <column_name>Inactivos</column_name>
+        <stream_name>inactivos</stream_name>
+      </field>
+      <field>
+        <column_name>Demostraciones</column_name>
+        <stream_name>demostraciones</stream_name>
+      </field>
+      <field>
+        <column_name>ProspectosConDemo</column_name>
+        <stream_name>prospectoscondemo</stream_name>
+      </field>
+      <field>
+        <column_name>DemostracionesApp</column_name>
+        <stream_name>demostracionesapp</stream_name>
+      </field>
+      <field>
+        <column_name>SeguimientosCumplidos</column_name>
+        <stream_name>SeguimientosCumplidos</stream_name>
+      </field>
+      <field>
+        <column_name>SeguimientosApp</column_name>
+        <stream_name>seguimientosapp</stream_name>
+      </field>
+      <field>
+        <column_name>VentasEntregadas</column_name>
+        <stream_name>VentasEntregadas</stream_name>
+      </field>
+      <field>
+        <column_name>iddistribuidorpip</column_name>
+        <stream_name>iddistribuidorpip</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1536</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>UsoApp 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select 
+ Pivote.id
+,Pivote.ROP as EjecutivoRop
+,Pivote.dos as Ejecutivodos
+,Pivote.nombrecompleto as nombrecompleto
+,sum(Datos.demostraciones) as demostracionesApp
+,sum(Datos.Seguimientos) as SeguimientosApp
+,case
+		WHEN Pivote.perfil isnull then 'Sin definir'
+		WHEN '${NIVELACCESO}'='6' then ' '
+		ELSE Pivote.perfil
+END as perfil
+from
+(select
+ case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombre 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  'NA'
+END as DOS
+,sum(a.demostraciones) as demostraciones
+,sum(a.Seguimientoscumplidos) as Seguimientos
+,perfil
+from dwhmultimarca.analisisconsumoapps a
+inner join dwhmultimarca.dim_fechas f on a.dimfecha=f.idfecha
+inner join dwhmultimarca.dim_ejecutivos_app e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where f.fecha between to_date('${FECHAINICIO}','YYYY/MM/01') and '${FECHAINICIO}'
+and e.perfil='Vendedor'and
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(d.idclientepip as char(6))='${NIVELINFORMACION}'
+END
+group by 
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END,e.perfil
+order by id) Datos
+right join(
+select
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombrecompleto
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.rop
+END as ROP
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.apv_2_0
+END as DOS
+,perfil
+from dwhmultimarca.analisisconsumoapps a
+inner join dwhmultimarca.dim_fechas f on a.dimfecha=f.idfecha
+inner join dwhmultimarca.dim_ejecutivos_app e on a.dimejecutivo=e.idejecutivo
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where f.fecha between to_date('${FECHAINICIO}','YYYY/MM/01') and '${FECHAINICIO}'
+and case
+		WHEN '${NIVELACCESO}'='6'      THEN  e.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(e.idclientepip as char(6))='${NIVELINFORMACION}'
+END and e.activo='Si'
+group by
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.rop
+END
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.apv_2_0
+END ,perfil 
+order by id) Pivote on Datos.id=Pivote.id
+group by Pivote.id,Pivote.Rop,Pivote.dos,Pivote.perfil,Pivote.nombrecompleto
+order by Pivote.id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>UsoApp 2 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>DWH_RS_RW</connection>
+    <sql>select
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END  as id
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END as nombrecompleto
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.rop
+END as ROP
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.apv_2_0
+END as DOS
+,perfil
+from  dwhmultimarca.dim_ejecutivos_app e 
+inner join ${BASEDWH}.dim_distribuidores d on e.idclientepip=d.idclientepip
+where case
+		WHEN '${NIVELACCESO}'='6'      THEN  e.idclientepip=d.idclientepip
+		WHEN '${NIVELACCESO}'='5'      THEN  d.zona='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='4'      THEN  d.region='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.plaza='${NIVELINFORMACION}' or  d.plazagrupo='${NIVELINFORMACION}'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  cast(e.idclientepip as char(6))='${NIVELINFORMACION}'
+END and e.activo='Si'
+group by
+case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.referencia
+END 
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='5'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='4'      THEN  d.nombre
+		WHEN '${NIVELACCESO}'='3'	   THEN  d.nombre
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.nombrecompleto
+END
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.rop
+END
+,case
+		WHEN '${NIVELACCESO}'='6'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='5'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='4'      THEN  'NA'
+		WHEN '${NIVELACCESO}'='3'	   THEN  'NA'
+		WHEN '${NIVELACCESO}'='2'  	   THEN  e.apv_2_0
+END ,perfil 
+order by id</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>368</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes>
+    <group>
+      <name>explorerState</name>
+    </group>
+  </attributes>
+</transformation>
