@@ -1,0 +1,1 @@
+F:\Produccion\Pentaho7\design-tools\data-integration\kitchen.bat /file:F:\Produccion\envio_scorecard\MAIN_ENVIARLINK.kjb /log:F:\Produccion\Logs\envio_scorecard_%date:~-4,4%-%date:~-7,2%-%date:~-10,2%.log
